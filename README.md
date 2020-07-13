@@ -14,7 +14,7 @@ Features:
 Currently support 1.15.X and 1.16.X
 
 Optional Features
- AntiVPN: In AntiVPN folder copy or cut Gatekeeper.jar to plugins folder
+AntiVPN: In AntiVPN folder copy or cut Gatekeeper.jar to plugins folder
  
 ------------------------------------------------------------------------
 If you want to start a Survival Server I highly recommend you to use the plugin
@@ -31,4 +31,9 @@ You can also monitor lag-sources and teleport to the chunk where lag is caused.
 Download: https://www.spigotmc.org/resources/insights-super-configurable-limits-a-sync-scans-realtime-1-8-1-15-2.56489/
 
 Todo list:
- -Support older versions
+-Support older versions
+------------------------------------------------------------------------
+Useful links
+Bukkit.yml: https://bukkit.gamepedia.com/Bukkit.yml
+Spigot.yml: https://www.spigotmc.org/wiki/spigot-configuration/
+Paper.yml: https://paper.readthedocs.io/en/latest/server/configuration.html
