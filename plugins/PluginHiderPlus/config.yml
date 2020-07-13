@@ -1,0 +1,54 @@
+#If you set this to true the whitelist will be a blacklist.
+reverse-suggestionsWhitelist: false
+
+#Insert Here All Commands you want to show in the command suggestions. (Without "/")
+#Only the commands that are included in the player's command list will be whitelisted.
+#ALERT!!! insert only lowercase letters.
+suggestionsWhitelist:
+  - msg
+
+#Insert Here All Commands you want to block. (Without "/")
+blockedCommands:
+  - pex
+  - version
+  - world
+  - start
+  - stop
+  - reload
+  - restart
+  - exploitfixer
+  - ef
+  - '!'
+
+#Type here the message displayed if a player run a blocked command ('&' Color codes are enabled)
+#For disabling set it to 'none'.
+blockedcommandsMessage: '&c&l[!] &cUnknown Command. Please use /Help!'
+
+#if this is false the plugin blocks only the tab completions can show your plugins, if it is true the plugin blocks all the tab completions.
+#If the server version is 1.13+ enable it for blocking all the tab completions (is the only way for doing it with this plugin).
+blockAllTabCompletions: false
+
+#Here you can add some message replacements for hiding the non-customizable plugin messages. (You can add an infinite number of replacements)
+#Guide: Don't use color codes in (message:).
+#This feature is disabled by default, for enabling it change enable-messageReplacements to true.
+enable-messageReplacements: false
+messageReplacements:
+  replaceOne:
+    message: 'String'
+    replace: '(!) You don''t have permission!'
+
+#The default blocked commands, ALERT! remove one of it only if you know what are you doing.
+defaultBlockedCommands:
+  - 'pl'
+  - 'plugins'
+  - 'ver'
+  - 'version'
+  - 'about'
+  - 'icanhasbukkit'
+  - 'bukkit'
+  - 'help'  
+  - '?'
+  - 'bukkit:pl'
+  - 'bukkit:?'
+  - 'bungee' 
+#bungee command has to be blocked in your bungeecord server!

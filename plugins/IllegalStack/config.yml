@@ -1,0 +1,95 @@
+ConfigVersion: '2.0'
+Exploits:
+  Fishing:
+    KickForAutoClickerFishing: true
+  FishMod:
+    MaxFishToNotifyStaffThenBlock: 5
+    WarnPlayerThenKickInsteadOfNotify: false
+    MaxFishAllowedBeforeKick: 5
+    WatchForAutoFishMod: true
+  OverStack:
+    PreventOverStackedItemInHoppers: true
+    FixOverstackedItemInstead: false
+    AllowStack:
+    - POTION
+    RemoveItemsOfType: []
+    GroupStack: []
+    RemoveOverstackedItems: true
+    StackWhiteListMode: true
+  NetherPortal:
+    PreventPortalTrap: true
+  MineCart:
+    PreventMinecartGlitch: true
+    MinecartBlockWhiteList: []
+    RemoveExistingGlitchedMinecarts: false
+  DropperDupe:
+    BlockLoopedDroppers: false
+  Looting:
+    PreventLootingExploit: true
+  Nether:
+    ExcludeNetherWorldFromHeightCheck: []
+    BlockPlayersAboveNether: true
+    NetherYLevel: 128
+  BookExploit:
+    DisableBookWriting: false
+    BookAuthorWhitelist: []
+    ValidCharset: US-ASCII
+    RemoveBooksNotMatchingCharset: true
+    PageCountThreshold: 5
+    LimitNumberOfPages: 0
+  PortalDupe:
+    NotifyBlockedPortalAttempts: false
+    BlockNonPlayersInEndPortal: true
+    NetherWhiteList: []
+    EndWhiteListMode: true
+    BlockNonPlayersInNetherPortal: true
+    EndWhiteList: []
+    NetherWhiteListMode: true
+  3rdParty:
+    BlockCMIShulkerStacking: true
+  Other:
+    PreventCommandsInBed: true
+    PreventBedrockDestruction: true
+    PreventEndPortalDestruction: true
+    PreventHoppersToUnloadedChunks: true
+    DisableChestsOnMobs: true
+  Enchants:
+    EnchantedItemWhitelist: []
+    CustomEnchantOverride: []
+    FixIllegalEnchants: false
+    AllowBypass: false
+    RemoveUnbreakableFlag: false
+    RemoveCustomAttributes: false
+    OnlyFunctionInWorlds: []
+  TNTDupe:
+    PreventIndirectTNTPowerDupe: true
+  SignExploit:
+    DestroyBadSignsOnChunkLoad: false
+UserRequested:
+  Mobs:
+    PreventZombieItemPickup: false
+  ItemRemoval:
+    NameLoreStrictMatchMode: false
+    ItemLoresToRemove: []
+    BlockRepairsInstead: false
+    BlockEnchantingInstead: false
+    ItemNamesToRemove: []
+    RemoveItemsMatchingName: false
+  Obscure:
+    HopperCheck:
+      IgnoreAllHopperChecks: false
+    HackedShulker: {}
+  Cobble:
+    PreventCobbleGenerators: false
+  Obsure:
+    Misc:
+      RemoveAllRenamedItems: false
+  Misc:
+    NotifyInsteadOfBlock: []
+Misc:
+  LogOffensesInSeparateFile: true
+  InGameOffenseNotifications: true
+  ItemScanTimer: 10
+  BreakMachinesInsteadOfDroppingItems: true
+  NotifyNearbyPlayers: false
+  DisableInWorlds: []

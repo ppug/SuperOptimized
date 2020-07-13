@@ -1,0 +1,4 @@
+#For disabling set it to 'none'.
+denyMessage: 'Unknown Command. Please use /Help!'
+#For disabling set it to 'none'.
+allowMessage: 'none'

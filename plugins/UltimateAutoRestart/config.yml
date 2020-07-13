@@ -1,0 +1,115 @@
+# UltimateAutoRestart, a free resource by Norska. https://norska.dev
+# You can find more resources of mine here: https://norska.dev/spigotresources & https://norska.dev/mcmarketresources
+# Support Discord: https://norska.dev/discord
+
+# Notes:
+# 1. All of the restarts must follow this specific format: "DAY;HOUR;MINUTE". e.g "Friday;23;00" will create an entry to have a restart on Fridays at 23:00 or 11PM.
+# 1a. Valid day entries are: Monday , Tuesday , Wednesday , Thursday , Friday , Saturday , Sunday
+#
+# 2. messageAtInterval entries are in seconds, 1800 seconds = 30 minutes, 600 seconds = 10 minutes, 60 seconds = 1 minute etc. Same goes for soundAtIntervals.
+#
+# 3. If you want to execute bungee commands make sure to add [bungee] in-front of the command.
+# 3a. EXAMPLE USAGE OF USING A BUNGEE COMMAND (e.g Sending all skyblock players to the lobby):
+# 3a: EXAMPLE COMMAND: '[bungee] send skyblock lobby'
+# 3a: GENERAL FORMAT OF THE ABOVE EXAMPLE: '[bungee] send <CURRENT SERVER NAME> <SERVER TO SEND PLAYERS TO>'
+# 3a: NOTE: You must specifically use the current server's name, using "current" will not work because the command is executed via bungee.
+#
+# 4: You can create timed commands that will execute x seconds before the restart.
+# 4a. GENERAL FORMAT OF A TIMED COMMAND: '[time:<INTERVAL>] <COMMAND>' (e.g '[time:10] time set day', will set the time to day 10 seconds before the restart).
+#
+# 5: You can create timed bungee commands that will execute x seconds before the restart.
+# 5a. GENERAL FORMAT OF A TIMED BUNGEE COMMAND: '[bungee:<INTERVAL>] <COMMAND>' (e.g '[bungee:10] send skyblock lobby', will send all skyblock players to the lobby 10 seconds before the restart).
+# 
+# 6: commandsAfterReboot can only be timed bukkit/bungee commands.
+
+settings:
+   restartCommands:
+   #- '[bungee:20] command to execute via bungee 20 seconds before restart'
+   #- '[time:15] command to execute 15 seconds before restart'
+   #- '[time:10] command to execute 10 seconds before restart'
+   #- '[bungee] broadcast The server is restarting!'
+   - 'save-all'
+   - 'restart'
+   commandsAfterReboot:
+   - '[time:15] broadcast The server has been rebooted successfully!'
+   restarts:
+   - 'Monday;06;00'
+   - 'Tuesday;06;00'
+   - 'Wednesday;06;00'
+   - 'Thursday;06;00'
+   - 'Friday;06;00'
+   - 'Saturday;06;00'
+   - 'Sunday;06;00'
+   messageAtIntervals:
+   - '1800'
+   - '600'
+   - '60'
+   - '30'
+   - '3'
+   - '2'
+   - '1'
+   soundsEnabled: false
+   sound: ENTITY_PLAYER_LEVELUP
+   soundAtIntervals:
+   - '1800'
+   - '600'
+   - '60'
+   - '30'
+   - '3'
+   - '2'
+   - '1'
+   
+format:
+   seconds: 's'
+   second: 's'
+   minutes: 'm '
+   minute: 'm '
+   hours: 'h '
+   hour: 'h '
+   splitter: 'and '
+   
+messages:
+   requestWhileNoAutoReboot: '&f&lN/A'
+   interval:
+      actionbar: true
+      actionbarMessage: '&c&l[&6&l⚠&c&l] &cThe server will reboot in &f$interval&f!'
+      title: false
+      titleMessage: '&c&nRESTART!'
+      subtitleMessage: '&eA restart will happen in &f$interval&e!'
+      chat: true
+      chatMessage:
+      - '&c&l[&6&l⚠&c&l] &cThe server will reboot in &f$interval&f!'
+      console: true
+      consoleMessage: '&c&l[&6&l⚠&c&l] &cServer restart in &f$interval&c!'
+   requestedInterval:
+      actionbar: false
+      actionbarMessage: '&e&nRestart:&r &fA restart will happen in &7$interval&f!'
+      title: false
+      titleMessage: '&c&nRESTART!'
+      subtitleMessage: '&eA restart will happen in &f$interval&e!'
+      chat: true
+      chatMessage:
+      - '&c&l[&6&l⚠&c&l] &cA restart will happen in &f$interval&c!'
+   forceRestart:
+   - '&c&l[&6&l⚠&c&l] &cYou force started an auto-restart &f(Interval: $interval)&7!'
+   noForceInterval:
+   - '&c&l[&6&l⚠&c&l] &cPlease specify an interval!'
+   intervalNotANumber:
+   - '&c&l[&6&l⚠&c&l] &cYour input &f($input) &7is not a number!'
+   intervalTooSmall:
+   - '&c&l[&6&l⚠&c&l] &cIntervals must be positive!'
+   stoppedReboot:
+   - '&c&l[&6&l⚠&c&l] &cYou have manually stopped the scheduled restart!'
+   autoRebootNotOn:
+   - '&c&l[&6&l⚠&c&l] &cCould not stop the scheduled restart because the task is currently not running!'
+   noPermission:
+   - '&c&l[&6&l⚠&c&l] &cYou do not have permission to do this!'
+   reloadMessage:
+   - '&c&l[&6&l⚠&c&l] &cYou reloaded the plugin configuration!'
+   - '&cNote: This will not add any new restart entries, you must restart your server!'
+   
+updates:
+   notifications: true
+   
+other:
+   debug: false
