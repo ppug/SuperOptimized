@@ -34,6 +34,6 @@ Todo list:
 - Support older versions
 ------------------------------------------------------------------------
 Useful links
-Bukkit.yml: https://bukkit.gamepedia.com/Bukkit.yml
-Spigot.yml: https://www.spigotmc.org/wiki/spigot-configuration/
-Paper.yml: https://paper.readthedocs.io/en/latest/server/configuration.html
+-Bukkit.yml: https://bukkit.gamepedia.com/Bukkit.yml
+-Spigot.yml: https://www.spigotmc.org/wiki/spigot-configuration/
+-Paper.yml: https://paper.readthedocs.io/en/latest/server/configuration.html
