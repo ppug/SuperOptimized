@@ -9,4 +9,4 @@ Features:
 - Optimized Mobs
 - Optimized JVM-Arguments
 
-Currently support 1.15.X will support 1.16 soon!
+Currently support 1.15.X and 1.16.X
