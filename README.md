@@ -1,6 +1,8 @@
 # SuperOptimized Setup
 A Minecraft server that highly increase performance.
 
+Downloads: https://github.com/JustPugDev/SuperOptimized/releases
+
 Features:
 - Optimized Hoppers
 - Optimized Chunks
