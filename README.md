@@ -31,7 +31,7 @@ You can also monitor lag-sources and teleport to the chunk where lag is caused.
 Download: https://www.spigotmc.org/resources/insights-super-configurable-limits-a-sync-scans-realtime-1-8-1-15-2.56489/
 
 Todo list:
--Support older versions
+- Support older versions
 ------------------------------------------------------------------------
 Useful links
 Bukkit.yml: https://bukkit.gamepedia.com/Bukkit.yml
