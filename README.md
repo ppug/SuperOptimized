@@ -29,4 +29,6 @@ You can also use the plugin "Insights" to limit blocks in chunks,
 this can prevent the overuse of Redstone, Hoppers and whatever block you want.
 You can also monitor lag-sources and teleport to the chunk where lag is caused.
 Download: https://www.spigotmc.org/resources/insights-super-configurable-limits-a-sync-scans-realtime-1-8-1-15-2.56489/
- 
+
+Todo list:
+ -Support older versions
