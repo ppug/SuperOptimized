@@ -81,7 +81,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 2
     entities-target-with-follow-range: false
-    baby-zombie-movement-modifier: 0.5
+    baby-zombie-movement-modifier: 0.4
     zombie-villager-infection-chance: -1.0
     disable-teleportation-suffocation-check: false
     use-vanilla-world-scoreboard-name-coloring: false
